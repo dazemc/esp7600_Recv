@@ -17,7 +17,6 @@ void initMain() {
   displayData.disp = disp;
   displayData.OledX = OledX;
   displayData.OledY = OledY;
-  initQueue();
 }
 
 void initQueue() {
