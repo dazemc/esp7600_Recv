@@ -7,7 +7,7 @@ QueueHandle_t serialQueue = nullptr;
 
 static DisplayData displayData{};
 
-void mainInit() {
+void initMain() {
   initArduino();
   initSerial();
   ssd1306_handle_t disp = initDisplay();
@@ -40,7 +40,7 @@ void initTasks() {
 }
 
 extern "C" void app_main() {
-  mainInit();
+  initMain();
   initQueue();
   initTasks();
 }

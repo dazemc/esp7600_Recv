@@ -13,5 +13,6 @@ extern QueueHandle_t loraTXQueue;
 extern QueueHandle_t displayQueue;
 extern QueueHandle_t serialQueue;
 
-void mainInit();
+void initMain();
 void initQueue();
+void initTasks();
